@@ -1,0 +1,14 @@
+[Unit]
+Description=Telegram MikroTik Bot
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/mikrotik-telegram-bot
+ExecStart=/home/ubuntu/mikrotik-telegram-bot/venv/bin/python3 main.py
+EnvironmentFile=/home/ubuntu/mikrotik-telegram-bot/.env
+Restart=always
+RestartSec=5
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target
