@@ -1,0 +1,19 @@
+{
+  "id": null,
+  "title": "MikroTik Telegram Bot",
+  "panels": [
+    {
+      "type": "logs",
+      "title": "Bot Log",
+      "datasource": "Loki",
+      "targets": [
+        {
+          "expr": "{job=\"mikrotik_bot\"}"
+        }
+      ],
+      "gridPos": { "x": 0, "y": 0, "w": 24, "h": 15 }
+    }
+  ],
+  "schemaVersion": 36,
+  "version": 1
+}
