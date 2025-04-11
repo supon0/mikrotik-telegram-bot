@@ -1,0 +1,5 @@
+python-telegram-bot==20.0
+librouteros
+python-dotenv
+requests
+prometheus_client
